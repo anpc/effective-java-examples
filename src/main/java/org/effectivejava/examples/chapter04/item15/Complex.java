@@ -20,6 +20,7 @@ public final class Complex {
 		return new Complex(r * Math.cos(theta), r * Math.sin(theta));
 	}
 
+	// Can generalize this to use factories with caching.
 	public static final Complex ZERO = new Complex(0, 0);
 	public static final Complex ONE = new Complex(1, 0);
 	public static final Complex I = new Complex(0, 1);
