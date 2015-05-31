@@ -5,7 +5,9 @@ public final class Complex {
 	private final double re;
 	private final double im;
 
-	private Complex(double re, double im) {
+	//a slightly bold decision: do allow subclassing, but warn that this class is immutable, and subclasses
+	//must respect immutability.
+	public Complex(double re, double im) {
 		this.re = re;
 		this.im = im;
 	}
